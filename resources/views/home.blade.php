@@ -15,6 +15,11 @@
                 <button>検索</button>
             </form>
         </div>
+        <div class="list">
+            <ul>
+                <li>あああ</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
