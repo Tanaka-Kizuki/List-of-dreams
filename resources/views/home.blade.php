@@ -20,6 +20,9 @@
                 <li>あああ</li>
             </ul>
         </div>
+        <div class="create">
+            <a href="/add"><img src="{{ asset('image/プラスマークアイコン 6.svg') }}" alt="新規作成"></a>
+        </div>
     </div>
 </body>
 </html>
