@@ -15,8 +15,9 @@
             <h2>最寄り駅</h2>
             <input type="text" name="train">
             <h2>タグ</h2>
-            <input type="checkbox" value="やりたいこと" name="tag">
-            <input type="checkbox" value="やりたいこと" name="tag">
+            <input type="radio" value="やりたいこと" name="tag">やりたいこと
+            <input type="radio" value="カフェ" name="tag">カフェ
+            <input type="submit" value="保存">
         </form>
     </div>
 </body>
