@@ -1924,9 +1924,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
+  data: function data() {
+    return {
+      show: false
+    };
+  },
+  methods: {
+    save: function save() {
+      this.show = true;
+    }
   }
 });
 
@@ -37593,42 +37604,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { staticClass: "create" }, [
+      _c("img", {
+        attrs: { src: "image/プラスマークアイコン 6.svg", alt: "新規作成" },
+        on: { click: _vm.save }
+      })
+    ]),
+    _vm._v(" "),
+    _vm.show
+      ? _c("div", { staticClass: "add" }, [
+          _c("form", { attrs: { action: "/add", method: "get" } }, [
+            _c("h2", [_vm._v("やりたいこと")]),
+            _vm._v(" "),
+            _c("input", { attrs: { type: "text", name: "do" } }),
+            _vm._v(" "),
+            _c("h2", [_vm._v("最寄り駅")]),
+            _vm._v(" "),
+            _c("input", { attrs: { type: "text", name: "train" } }),
+            _vm._v(" "),
+            _c("h2", [_vm._v("タグ")]),
+            _vm._v(" "),
+            _c("input", {
+              attrs: {
+                type: "radio",
+                value: "やりたいこと",
+                name: "tag",
+                checked: "true"
+              }
+            }),
+            _vm._v("やりたいこと\n            "),
+            _c("input", {
+              attrs: { type: "radio", value: "カフェ", name: "tag" }
+            }),
+            _vm._v("カフェ\n            "),
+            _c("input", {
+              attrs: { type: "submit", value: "保存" },
+              on: { click: _vm.save }
+            })
+          ])
+        ])
+      : _vm._e()
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "add" }, [
-      _c("form", { attrs: { action: "/home", method: "post" } }, [
-        _vm._v("\n    @csrf\n        "),
-        _c("h2", [_vm._v("やりたいこと")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text", name: "do" } }),
-        _vm._v(" "),
-        _c("h2", [_vm._v("最寄り駅")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text", name: "train" } }),
-        _vm._v(" "),
-        _c("h2", [_vm._v("タグ")]),
-        _vm._v(" "),
-        _c("input", {
-          attrs: {
-            type: "radio",
-            value: "やりたいこと",
-            name: "tag",
-            checked: "true"
-          }
-        }),
-        _vm._v("やりたいこと\n        "),
-        _c("input", { attrs: { type: "radio", value: "カフェ", name: "tag" } }),
-        _vm._v("カフェ\n        "),
-        _c("input", { attrs: { type: "submit", value: "保存" } })
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

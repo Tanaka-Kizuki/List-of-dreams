@@ -9,7 +9,6 @@
 <body>
     <div class="add">
         <form action="/home" method="post">
-        @csrf
             <h2>やりたいこと</h2>
             <input type="text" name="do">
             <h2>最寄り駅</h2>

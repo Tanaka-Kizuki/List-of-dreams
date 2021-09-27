@@ -22,9 +22,6 @@
                 <li>あああ</li>
             </ul>
         </div>
-        <div class="create">
-            <a href="/add"><img src="{{ asset('image/プラスマークアイコン 6.svg') }}" alt="新規作成"></a>
-        </div>
         <example-component></example-component>
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
