@@ -37600,21 +37600,31 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
-            ])
-          ])
-        ])
+    return _c("div", { staticClass: "add" }, [
+      _c("form", { attrs: { action: "/home", method: "post" } }, [
+        _vm._v("\n    @csrf\n        "),
+        _c("h2", [_vm._v("やりたいこと")]),
+        _vm._v(" "),
+        _c("input", { attrs: { type: "text", name: "do" } }),
+        _vm._v(" "),
+        _c("h2", [_vm._v("最寄り駅")]),
+        _vm._v(" "),
+        _c("input", { attrs: { type: "text", name: "train" } }),
+        _vm._v(" "),
+        _c("h2", [_vm._v("タグ")]),
+        _vm._v(" "),
+        _c("input", {
+          attrs: {
+            type: "radio",
+            value: "やりたいこと",
+            name: "tag",
+            checked: "true"
+          }
+        }),
+        _vm._v("やりたいこと\n        "),
+        _c("input", { attrs: { type: "radio", value: "カフェ", name: "tag" } }),
+        _vm._v("カフェ\n        "),
+        _c("input", { attrs: { type: "submit", value: "保存" } })
       ])
     ])
   }
