@@ -19,7 +19,9 @@
         </div>
         <div class="list">
             <ul>
-                <li>あああい</li>
+                @foreach($items as $item)
+                <li>{{$item->name}}</li>
+                @endforeach
             </ul>
         </div>
         <example-component></example-component>
