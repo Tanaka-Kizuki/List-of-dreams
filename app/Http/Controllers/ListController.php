@@ -20,4 +20,9 @@ class ListController extends Controller
         $dream->fill($data)->save();
         return redirect('/home');
     }
+
+    public function result() {
+        $key = config('app.APIKey');
+        return view('list',['key'=>$key]);
+    }
 }

@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/home', 'ListController@index')->name('home');
 Route::get('/add', 'ListController@add')->name('add');
+Route::get('/result','ListController@result')->name('result');

@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import ListConponent from './ListComponent.vue';
 export default {
     props :['items'],
 }
