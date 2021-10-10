@@ -18,16 +18,6 @@
                 <button>検索</button>
             </form>
         </div>
-        <div class="list">
-            <ul>
-                @foreach($items as $item)
-                <li>
-                    <p>{{$item->name}}</p>
-                    <input type="text" value='{{$item->created_at}}'>
-                </li>
-                @endforeach
-            </ul>
-        </div>
         <example-component></example-component>
         <do-component :items='{{$items}}'></do-component>
     </div>
