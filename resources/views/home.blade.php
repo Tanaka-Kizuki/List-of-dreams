@@ -29,6 +29,7 @@
             </ul>
         </div>
         <example-component></example-component>
+        <do-component :items='{{$items}}'></do-component>
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
