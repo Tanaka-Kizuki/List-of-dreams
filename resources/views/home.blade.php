@@ -19,7 +19,7 @@
         </div>
         <div class="list">
             <ul>
-                <li>あああ</li>
+                <li>あああい</li>
             </ul>
         </div>
         <example-component></example-component>
