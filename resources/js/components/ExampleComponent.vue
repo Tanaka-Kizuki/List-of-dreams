@@ -1,7 +1,7 @@
 <template>
     <div class="add">
         <div class="add_form"  v-if="show">
-            <form action="/add" method="get">
+            <form action="/add" method="post">
                 <h2>やりたいこと</h2>
                 <input type="text" name="name">
                 <h2>最寄り駅</h2>
@@ -42,6 +42,14 @@
         bottom: 0;
         left: 0;
     }
+    .add_form {
+        background-color: rgb(223, 219, 219);
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%)
+    }
     .create {
         text-align: right;
         position: absolute;
@@ -51,5 +59,8 @@
     .button {
         width: 50px;
         height: 50px;
+    }
+    h2,input {
+        margin-bottom: 10px;
     }
 </style>

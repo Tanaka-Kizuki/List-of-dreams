@@ -6488,7 +6488,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.add {\n    text-align: center;\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n}\n.create {\n    text-align: right;\n    position: absolute;\n    bottom: 30px;\n    right: 20px;\n}\n.button {\n    width: 50px;\n    height: 50px;\n}\n", ""]);
+exports.push([module.i, "\n.add {\n    text-align: center;\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n}\n.add_form {\n    background-color: rgb(223, 219, 219);\n    padding: 30px;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%,-50%)\n}\n.create {\n    text-align: right;\n    position: absolute;\n    bottom: 30px;\n    right: 20px;\n}\n.button {\n    width: 50px;\n    height: 50px;\n}\nh2,input {\n    margin-bottom: 10px;\n}\n", ""]);
 
 // exports
 
@@ -38426,7 +38426,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("form", { attrs: { action: "/add", method: "get" } }, [
+    return _c("form", { attrs: { action: "/add", method: "post" } }, [
       _c("h2", [_vm._v("やりたいこと")]),
       _vm._v(" "),
       _c("input", { attrs: { type: "text", name: "name" } }),
