@@ -17,8 +17,9 @@ class ListController extends Controller
         $dream = new Dream;
         $data = $request -> all();
         unset($data['_token']);
+        $dream->timestamps = false;
         $dream->fill($data)->save();
-        return redirect('/home');
+        return redirect('/');
     }
 
     public function result() {

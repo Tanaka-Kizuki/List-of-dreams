@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
-Route::get('/home', 'ListController@index')->name('home');
-Route::post('/add', 'ListController@add')->name('add');
+Route::get('/', 'ListController@index')->name('home');
+Route::get('/add', 'ListController@add')->name('add');
 Route::get('/result','ListController@result')->name('result');

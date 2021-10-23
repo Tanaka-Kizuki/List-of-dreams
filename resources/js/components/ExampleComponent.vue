@@ -1,7 +1,7 @@
 <template>
     <div class="add">
         <div class="add_form"  v-if="show">
-            <form action="/add" method="post">
+            <form action="/add" method="get">
                 <h2>やりたいこと</h2>
                 <input type="text" name="name">
                 <h2>最寄り駅</h2>
