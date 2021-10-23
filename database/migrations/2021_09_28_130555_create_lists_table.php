@@ -18,8 +18,6 @@ class CreateListsTable extends Migration
             $table->string('name');
             $table->string('tag');
             $table->string('train');
-            $table->timestamp('updated_at');
-            $table->timestamp('created_at');
         });
     }
 
